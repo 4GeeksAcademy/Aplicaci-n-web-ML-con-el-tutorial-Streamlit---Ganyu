@@ -1,13 +1,12 @@
-
 import streamlit as st
 import joblib
+import os
 
-# Cargar el modelo
-modelo = joblib.load('Aplicaci-n-web-ML-con-el-tutorial-Streamlit---Ganyu/models/modelo_suma.pkl')
+ruta_modelo = os.path.join(os.path.dirname(__file__), 'models', 'modelo_suma.pkl')
+modelo = joblib.load(ruta_modelo)
 
 # Título de la app
 st.title("🧮 Calculadora de Suma con ML")
-
 st.write("Este modelo predice la suma de dos números usando regresión lineal.")
 
 # Entradas del usuario
