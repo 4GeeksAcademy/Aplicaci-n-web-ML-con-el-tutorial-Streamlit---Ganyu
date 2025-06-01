@@ -3,7 +3,7 @@ import streamlit as st
 import joblib
 
 # Cargar el modelo
-modelo = joblib.load('/workspaces/Aplicaci-n-web-ML-con-el-tutorial-Streamlit---Ganyu/models/modelo_suma.pkl')
+modelo = joblib.load('Aplicaci-n-web-ML-con-el-tutorial-Streamlit---Ganyu/models/modelo_suma.pkl')
 
 # Título de la app
 st.title("🧮 Calculadora de Suma con ML")
