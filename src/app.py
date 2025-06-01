@@ -2,6 +2,7 @@ import streamlit as st
 import joblib
 import os
 
+ruta_actual = os.path.dirname(__file__)
 ruta_modelo = os.path.join(ruta_actual, '..', 'models', 'modelo_suma.pkl')
 modelo = joblib.load(ruta_modelo)
 
