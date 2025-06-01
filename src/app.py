@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import os
 
-ruta_modelo = os.path.join(os.path.dirname(__file__), 'models', 'modelo_suma.pkl')
+ruta_modelo = os.path.join(ruta_actual, '..', 'models', 'modelo_suma.pkl')
 modelo = joblib.load(ruta_modelo)
 
 # Título de la app
